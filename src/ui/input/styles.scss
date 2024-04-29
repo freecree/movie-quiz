@@ -1,0 +1,28 @@
+.input {
+  height: 64px;
+  padding: 0 24px;
+  border-radius: 8px;
+  border: 1px solid #D7DCDF;
+  width: 100%;
+  font-size: 16px;
+  color: #212121;
+  &:focus-visible {
+    border: 1px solid #4285f4;
+    outline: none;
+  }
+  &::placeholder {
+    font-size: 16px;
+    color: #212121;
+    opacity: 50%;
+  }
+  &_error,
+  &_error:focus-visible {
+    border: 1px solid #DC0000;
+  }
+  &__error-text {
+    color: #DC0000;
+    font-size: 14px;
+    margin-top: 8px;
+    text-align: left;
+  }
+}

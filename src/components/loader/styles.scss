@@ -1,0 +1,11 @@
+.loader{
+  display: flex;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  position: 'absolute';
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: url('../../assets/loader.gif') center center / 100%;
+}

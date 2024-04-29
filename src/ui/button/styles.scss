@@ -1,0 +1,15 @@
+.button {
+  height: 64px;
+  color: #fff;
+  width: 100%;
+  background: #40BCA3;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Noto Sans', serif;
+  &:disabled {
+    opacity: 50%;
+    cursor: not-allowed;
+  }
+}

@@ -1,0 +1,22 @@
+.quiz-option {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 16px 20px 16px;
+  border: 1px solid #D7DCDF;
+  border-radius: 8px;
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+  &_checked {
+    border: #40BCA3 solid 2px;
+  }
+  &__emoji {
+    font-family: "Noto Color Emoji", sans-serif;
+    font-size: 24px;
+    margin-right: 16px;
+  }
+}
