@@ -18,7 +18,7 @@ function Result() {
       try {
         const movieTitle = localStorage.getItem('movieTitle');
         const response = await fetch(
-          `http://www.omdbapi.com/?t=${movieTitle}&apikey=21fc6b4a`,
+          `https://www.omdbapi.com/?t=${movieTitle}&apikey=21fc6b4a`,
         );
         const filmData = await response.json();
         if (filmData.Error) {
@@ -27,8 +27,9 @@ function Result() {
           setResultFilm(filmData);
         }
         console.log('data: ', filmData);
-      } catch {
+      } catch (e) {
         setError('Something went wrong');
+        console.log('error', e);
       } finally {
         setIsLoading(false);
       }
